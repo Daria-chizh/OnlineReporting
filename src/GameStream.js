@@ -1,3 +1,6 @@
+import FootballImg from '../img/football.png';
+import BadMarkImg from '../img/bad_mark.png';
+
 export default class GameStream {
   constructor(backendUrl) {
     this.backendUrl = backendUrl;
@@ -27,14 +30,14 @@ export default class GameStream {
 
       if (gameEvent.type === 'goal') {
         const newContainerGoal = document.createElement('img');
-        newContainerGoal.setAttribute('src', '../img/football.png');
+        newContainerGoal.setAttribute('src', FootballImg);
         newContainerGoal.classList.add('goal');
         addToChatMessage.appendChild(newContainerGoal);
       }
 
       if (gameEvent.type === 'freekick') {
         const newContainerFreekick = document.createElement('img');
-        newContainerFreekick.setAttribute('src', '../img/bad_mark.png');
+        newContainerFreekick.setAttribute('src', BadMarkImg);
         newContainerFreekick.classList.add('freekick');
         addToChatMessage.appendChild(newContainerFreekick);
       }
