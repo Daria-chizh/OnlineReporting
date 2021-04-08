@@ -1,4 +1,4 @@
 import GameStream from './GameStream';
 
-const gameStream = new GameStream('http://localhost:5555/sse');
+const gameStream = new GameStream('https://daria-chizh-online-reporting.herokuapp.com/sse');
 gameStream.run();
