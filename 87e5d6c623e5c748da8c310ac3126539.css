@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+.online-widget {
+  width: 70vh;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.goal,
+.freekick {
+  position: absolute;
+  left: 60px;
+  margin-top: -35px;
+}
+
+.goal {
+  width: 27px;
+  height: 27px;
+}
+
+.time,
+.content {
+  padding-left: 100px;
+  font-size: 20px;
+}
+
+.time {
+  color: dimgray;
+  font-size: 15px;
+}
+
+.content {
+  margin-top: 10px;
+}
+
+.newContainer {
+  margin-top: 30px;
+}
