@@ -27,14 +27,14 @@ export default class GameStream {
 
       if (gameEvent.type === 'goal') {
         const newContainerGoal = document.createElement('img');
-        newContainerGoal.setAttribute('src', 'football.png');
+        newContainerGoal.setAttribute('src', '../img/football.png');
         newContainerGoal.classList.add('goal');
         addToChatMessage.appendChild(newContainerGoal);
       }
 
       if (gameEvent.type === 'freekick') {
         const newContainerFreekick = document.createElement('img');
-        newContainerFreekick.setAttribute('src', 'bad_mark.png');
+        newContainerFreekick.setAttribute('src', '../img/bad_mark.png');
         newContainerFreekick.classList.add('freekick');
         addToChatMessage.appendChild(newContainerFreekick);
       }
