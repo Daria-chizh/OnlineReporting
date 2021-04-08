@@ -1,3 +1,4 @@
 import GameStream from './GameStream';
 
-new GameStream('http://localhost:5555/sse');
+const gameStream = new GameStream('http://localhost:5555/sse');
+gameStream.run();

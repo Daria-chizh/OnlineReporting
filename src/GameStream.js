@@ -1,7 +1,11 @@
 export default class GameStream {
   constructor(backendUrl) {
+    this.backendUrl = backendUrl;
+  }
+
+  run() {
     const addToChatMessage = document.querySelector('.online-widget__messages');
-    const source = new EventSource(backendUrl);
+    const source = new EventSource(this.backendUrl);
 
     source.onmessage = (message) => {
       const gameEvent = JSON.parse(message.data);
